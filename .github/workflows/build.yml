@@ -13,9 +13,10 @@ jobs:
           sudo apt-get install aria2 cabextract wimtools chntpw genisoimage -y
           chmod +x uup_download_linux.sh
           "uup_download_linux.sh"
-       - name: Archive production artifacts
-         uses: actions/upload-artifact@v2
-         with:
-           name: ISO
-           path: |
-             *.ISO
+          
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: ISO
+          path: |
+            *.ISO
